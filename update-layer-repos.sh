@@ -1,6 +1,6 @@
 #!/bin/bash
 
-workDir=$(pwd)/nvent-vita
+workDir=$(pwd)/korbinian
 srcDir=$workDir/sources
 bspDir=$srcDir/meta-juhu-bsp
 repo=$workDir/bin/repo

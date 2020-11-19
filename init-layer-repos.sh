@@ -1,6 +1,6 @@
 #!/bin/bash
 
-workDir=$(pwd)/nvent-vita
+workDir=$(pwd)/korbinian
 srcDir=$workDir/sources
 
 mkdir -p $workDir

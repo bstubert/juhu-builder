@@ -89,7 +89,7 @@ RUN groupadd -g $host_gid $USER_NAME && useradd -g $host_gid -m -s /bin/bash -u 
 # normal user. Hence, we switch to the newly created user juhu.
 USER $USER_NAME
 
-WORKDIR /public/Work/nvent-vita
+WORKDIR /public/Work/korbinian
 
 CMD source ./juhu-setup.sh && /bin/bash
 

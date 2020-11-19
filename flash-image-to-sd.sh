@@ -3,11 +3,11 @@
 # PRECONDITION: The script expects that you have partitioned the SD card 
 # with the companion script partition-sd.sh. 
 
-# The script is run from $WORKDIR, which contains the subdirectories yocto-builder (with
-# this script) and nvent-vita (with the Yocto source and build tree). It expects the Linux
+# The script is run from $WORKDIR, which contains the subdirectories juhu-builder (with
+# this script) and korbinian (with the Yocto source and build tree). It expects the Linux
 # kernel, DTB files, rootfs tarball and u-boot in the directory 
 #
-#     $WORKDIR/nvent-vita/build/tmp/deploy/images/seco-sbc-a62
+#     $WORKDIR/korbinian/build/tmp/deploy/images/seco-sbc-a62
 #
 # If the script doesn't find a u-boot image, it doesn't flash u-boot. You need not flash u-boot
 # every time you flash the SD image. It's enough to flash it once on the SD card and then
@@ -25,7 +25,7 @@
 deviceFile=${1}
 partition1=${1}1
 partition2=${1}2
-imageDir=$(pwd)/nvent-vita/build/tmp/deploy/images/seco-sbc-a62
+imageDir=$(pwd)/korbinian/build/tmp/deploy/images/seco-sbc-a62
 
 /bin/umount ${deviceFile}*
 
