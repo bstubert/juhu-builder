@@ -1,5 +1,13 @@
 # Instructions to Build Juhu image
 
+## Dependencies
+
+This repository depends on the following repositories:
+
+* [meta-juhu-bsp](https://github.com/bstubert/meta-juhu-bsp) - a minimal extension of `meta-seco-bsp` layer with the image recipe `juhu-image-test-qt.bb`.
+* [juhu-manifest](https://github.com/bstubert/juhu-manifest) - manifest file listing all the layer repositories.
+* [cuteradio-apps](https://github.com/bstubert/cuteradio-apps) - a simple Internet radio application written in QML, Qt and C++.
+
 ## Prerequisites
 
 Create a working directory `$WORKDIR`, which you can access as a normal user. All the following commands are executed in this directory unless stated otherwise.
